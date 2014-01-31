@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @quote.body %>
+</p>
+
+<p>
+  <strong>Book title:</strong>
+  <%= @quote.book_title %>
+</p>
+
+<p>
+  <strong>Booklog:</strong>
+  <%= @quote.booklog_id %>
+</p>
+
+<p>
+  <strong>Booklog url:</strong>
+  <%= @quote.booklog_url %>
+</p>
+
+<%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'Back', quotes_path %>

@@ -1,0 +1,33 @@
+<%= form_for(@quote) do |f| %>
+  <% if @quote.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quote.errors.count, "error") %> prohibited this quote from being saved:</h2>
+
+      <ul>
+      <% @quote.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_field :body %>
+  </div>
+  <div class="field">
+    <%= f.label :book_title %><br>
+    <%= f.text_field :book_title %>
+  </div>
+  <div class="field">
+    <%= f.label :booklog_id %><br>
+    <%= f.number_field :booklog_id %>
+  </div>
+  <div class="field">
+    <%= f.label :booklog_url %><br>
+    <%= f.text_field :booklog_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
