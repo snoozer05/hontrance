@@ -8,8 +8,6 @@
       <th>Booklog</th>
       <th>Booklog url</th>
       <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
 
@@ -21,8 +19,6 @@
         <td><%= quote.booklog_id %></td>
         <td><%= quote.booklog_url %></td>
         <td><%= link_to 'Show', quote %></td>
-        <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
-        <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +26,3 @@
 
 <br>
 
-<%= link_to 'New Quote', new_quote_path %>
