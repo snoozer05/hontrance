@@ -3,7 +3,7 @@ class QuotesController < ApplicationController
 
   # GET /quotes
   def index
-    @quotes = Quote.all
+    @quotes = Quote.all.sample(10)
   end
 
   # GET /quotes/1
