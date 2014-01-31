@@ -1,4 +1,5 @@
 HonNoSukoshi::Application.routes.draw do
+  root 'quotes#index'
   resources :quotes, only: [:index, :show]
 
   # The priority is based upon order of creation: first created -> highest priority.
