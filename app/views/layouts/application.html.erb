@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HonNoSukoshi</title>
+  <title>ほんのいちぶ</title>
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <%= link_to "ほんのいちぶ", root_path, class: "navbar-brand" %>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <%= yield %>
+</div>
 </body>
 </html>

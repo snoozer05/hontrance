@@ -1,6 +1,6 @@
-<ul>
+<ul class="list-group">
   <% @quotes.each do |quote| %>
-    <li>
+    <li class="list-group-item">
       <%= link_to quote.body, quote %>
     </li>
   <% end %>
