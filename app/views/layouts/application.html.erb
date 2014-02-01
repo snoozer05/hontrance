@@ -37,6 +37,24 @@
 </nav>
 <div class="container">
   <%= yield %>
+  <hr>
+  <footer>
+    <p class="text-center">
+    Inspired by 
+    <%= link_to "紀伊国屋書店「ほんのまくら」フェア", "http://www.kinokuniya.co.jp/c/store/Shinjuku-Main-Store/20120725000000.html" %>
+    </p>
+    <p class="text-center">
+    Data is from
+    <%= link_to "ブクログ", "http://booklog.jp/" %>
+    </p>
+    <p class="text-center">
+      <%= link_to "@snoozer05", "https://twitter.com/snoozer05" %>
+      /
+      <%= link_to "https://github.com/snoozer05/hontrance/" do %>
+        <i class="fa fa-github"></i>
+      <% end %>
+    </p>
+  </footer>
 </div>
 </body>
 </html>
