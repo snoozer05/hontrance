@@ -12,6 +12,7 @@ start_id.upto(end_id).each do |booklog_id|
     booklog_url = doc.css(".quoteBook").attr("href").value
     quote = Quote.create(body: body, book_title: book_title, booklog_url: booklog_url, booklog_id: booklog_id)
     p quote
+    sleep(10)
   rescue => e
     p e
   end
