@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-HonNoSukoshi::Application.config.secret_key_base = '1645d3b2e4c86a405f1266ac7b4c3bbd22cacb70c1bc739e2d0761a7c386736160062ebddded9ea2fc4b3f3f44afa155998554b9f0bd0cc2d626afd0e12f193f'
+Hontrance::Application.config.secret_key_base = '1645d3b2e4c86a405f1266ac7b4c3bbd22cacb70c1bc739e2d0761a7c386736160062ebddded9ea2fc4b3f3f44afa155998554b9f0bd0cc2d626afd0e12f193f'

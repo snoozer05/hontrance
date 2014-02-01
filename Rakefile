@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-HonNoSukoshi::Application.load_tasks
+Hontrance::Application.load_tasks

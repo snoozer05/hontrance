@@ -1,4 +1,4 @@
-HonNoSukoshi::Application.routes.draw do
+Hontrance::Application.routes.draw do
   root 'quotes#index'
   resources :quotes, only: [:index, :show]
 
