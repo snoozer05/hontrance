@@ -1,13 +1,16 @@
-<ul class="list-group">
-  <% @quotes.each do |quote| %>
-    <li class="list-group-item">
-      <%= link_to quote.body, quote %>
-    </li>
-  <% end %>
-</ul>
+<blockquote>
+  <p class="lead">
+    <i class="fa fa-quote-left fa-6"></i>
+    <%= @quote.body %>
+    <footer>
+<%= link_to "http://booklog.jp#{@quote.booklog_url}", class: "btn btn-default", roll: "button" do %>
+  <i class="fa fa-external-link"></i> 本と出会う
+<% end %>
+    </footer>
+  </p>
+</blockquote>
 <p class="text-center">
-  <%= link_to root_path, class: "btn btn-default", roll: "button" do %>
-    <span class="glyphicon glyphicon-refresh"></span> 更新する
-  <% end %>
+<%= link_to root_path, class: "btn btn-default", roll: "button" do %>
+  <i class="fa fa-refresh"></i> 次へ
+<% end %>
 </p>
-
