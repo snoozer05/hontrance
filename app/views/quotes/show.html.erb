@@ -1,7 +1,0 @@
-<blockquote>
-  <p><%= @quote.body %></p>
-  <footer>『 <%= link_to @quote.book_title, "http://booklog.jp#{@quote.booklog_url}" %> 』</footer>
-</blockquote>
-<p class="text-center">
-<%= link_to "詳細を見る", "http://booklog.jp#{@quote.booklog_url}", class: "btn btn-default", roll: "button" %>
-</p>
