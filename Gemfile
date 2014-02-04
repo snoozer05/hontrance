@@ -34,6 +34,7 @@ gem 'nokogiri'
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
 gem 'google-analytics-rails'
+gem 'unicorn'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
