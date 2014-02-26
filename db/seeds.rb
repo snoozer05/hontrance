@@ -8,8 +8,9 @@ start_id.upto(end_id).each do |booklog_id|
   begin
     doc = Nokogiri::HTML(open("http://booklog.jp/quote/#{booklog_id}"))
     body = doc.xpath("//blockquote").text
-    book_title = doc.css(".citeArea").children[1].children[1].text
-    booklog_url = doc.css(".quoteBook").attr("href").value
+    book_info = doc.at('.quote-cite a')
+    book_title = book_info.text
+    booklog_url = book_info['href']
     quote = Quote.create(body: body, book_title: book_title, booklog_url: booklog_url, booklog_id: booklog_id)
     p quote
     sleep(10)
