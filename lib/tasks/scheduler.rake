@@ -3,7 +3,7 @@ require 'open-uri'
 
 desc "This task is called by the Heroku scheduler add-on"
 task :update_quotes => :environment do
-  puts "Updating auote..."
+  puts "Updating quote..."
   last_quote = Quote.last
   start_id = last_quote ? (last_quote.booklog_id + 1) : 1
   end_id = start_id + 300
