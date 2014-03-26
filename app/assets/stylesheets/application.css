@@ -10,5 +10,6 @@
  *
  *= require_self
  *= require font-awesome
+ *= require chardinjs
  *= require_tree .
  */
