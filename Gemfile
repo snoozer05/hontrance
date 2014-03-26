@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'nokogiri'
 gem 'bootstrap-sass'
+gem 'chardinjs-rails'
 gem "font-awesome-rails"
 gem 'google-analytics-rails'
 gem 'jquery-hotkeys-rails'

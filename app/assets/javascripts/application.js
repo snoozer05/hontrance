@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require jquery-hotkeys
 //= require bootstrap
+//= require chardinjs
 //= require_tree .

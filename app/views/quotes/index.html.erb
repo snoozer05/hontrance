@@ -3,14 +3,14 @@
     <i class="fa fa-quote-left fa-6"></i>
     <%= @quote.body %>
     <footer>
-<%= link_to "http://booklog.jp#{@quote.booklog_url}", id: "view", class: "btn btn-default", roll: "button" do %>
+      <%= link_to "http://booklog.jp#{@quote.booklog_url}", id: "view", class: "btn btn-default", roll: "button", data: { intro: 'この引用元の本のブクログのページに移動します。キーボードの`V`を押しても移動します', position: 'bottom' } do %>
   <i class="fa fa-external-link"></i> この本と出会う
 <% end %>
     </footer>
   </p>
 </blockquote>
 <p class="text-center">
-<%= link_to root_path, id: "next", class: "btn btn-default btn-lg", roll: "button" do %>
+<%= link_to root_path, id: "next", class: "btn btn-default btn-lg", roll: "button", data: { intro: '次の引用へ進みます。キーボードの`N`を押しても進みます', position: 'right' } do %>
   <i class="fa fa-refresh"></i> 次へ
 <% end %>
 </p>
