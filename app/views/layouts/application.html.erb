@@ -50,20 +50,20 @@
 <div class="container">
   <%= yield %>
   <hr>
-  <footer>
-    <div class="text-center" id="social-buttons">
+  <footer class="text-center">
+    <div class="clearfix" id="social-buttons">
       <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
       <div class="fb-like" data-href="http://hontrance.herokuapp.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
     </div>
-    <p class="text-center">
+    <p>
     Inspired by
     <%= link_to "紀伊國屋書店「ほんのまくら」フェア", "http://www.kinokuniya.co.jp/c/store/Shinjuku-Main-Store/20120725000000.html" %>
     </p>
-    <p class="text-center">
+    <p>
     Data is from
     <%= link_to "ブクログ", "http://booklog.jp/" %>
     </p>
-    <p class="text-center">
+    <p>
       <%= link_to "@snoozer05", "https://twitter.com/snoozer05" %>
       /
       <%= link_to "https://github.com/snoozer05/hontrance/" do %>

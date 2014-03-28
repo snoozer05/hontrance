@@ -7,4 +7,14 @@
 
 #social-buttons {
   margin: 0 0 10px;
+  display: inline-block;
+}
+
+#social-buttons > * {
+  float: left;
+  line-height: 0;
+}
+
+.fb-like,.fb-like span,.fb-like iframe{
+  width: 110px !important;
 }
