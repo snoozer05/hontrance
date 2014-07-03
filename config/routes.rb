@@ -1,6 +1,5 @@
 Hontrance::Application.routes.draw do
   root 'quotes#index'
-  resources :quotes, only: [:index]
   get 'about' => 'quotes#about'
 
   # The priority is based upon order of creation: first created -> highest priority.
